@@ -23,6 +23,8 @@ Samples including in this readme file:
 ![Languages](https://img.shields.io/github/languages/count/rmarting/gh-repo-template)
 ![Last Commit](https://img.shields.io/github/last-commit/rmarting/gh-repo-template)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/rmarting/gh-repo-template)
+[![➰ Sync labels 🏷️](https://github.com/rmarting/gh-repo-template/actions/workflows/sync-labels.yml/badge.svg)](https://github.com/rmarting/gh-repo-template/actions/workflows/sync-labels.yml)
+[![🔖 Release Drafter 🔖](https://github.com/rmarting/gh-repo-template/actions/workflows/release-drafter.yml/badge.svg)](https://github.com/rmarting/gh-repo-template/actions/workflows/release-drafter.yml)
 ```
 
 More details [here](https://blog.jromanmartin.io/2023/06/12/Improving-a-gh-repository.html) and in
