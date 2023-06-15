@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.1.30 - 2023-06-15
+
+### What Changed 👀
+
+- No changes
+
+**Full Changelog**: https://github.com/rmarting/gh-repo-template/compare/v0.1.29...v0.1.30
+
 ## v0.1.28 - 2023-06-15
 
 ### What Changed 👀
