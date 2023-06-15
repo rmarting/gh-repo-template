@@ -34,3 +34,14 @@ the services provided by [Shields](https://shields.io/).
 Workflows for automatic publishing releases and update changelogs.
 
 More details [here](https://blog.jromanmartin.io/2023/06/12/Improving-a-gh-repository.html).
+
+## Open Source Templates
+
+### Changelog
+
+* [Changelog](./CHANGELOG.md)
+
+### Code of Conduct
+
+* [Code of Conduct](./CODE_OF_CONDUCT.md)
+* [Contact](./CONTACT.md)
