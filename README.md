@@ -41,6 +41,19 @@ Workflows for automatic publishing releases and update changelogs.
 
 More details [here](https://blog.jromanmartin.io/2023/06/12/Improving-a-gh-repository.html).
 
+## GitHub Templates
+
+## Issues Templates
+
+* [New Bug](./.github/ISSUE_TEMPLATE/bug_report.md)
+* [New Documentation](./.github/ISSUE_TEMPLATE/documentation.md)
+* [New Feature](./.github/ISSUE_TEMPLATE/feature_request.md)
+* [Others](./.github/ISSUE_TEMPLATE/housekeeping.md)
+
+## Pull Request Template
+
+* [Pull Request](./.github/pull_request_template.md)
+
 ## Open Source Templates
 
 ### Changelog
