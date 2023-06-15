@@ -22,6 +22,7 @@ Samples including in this readme file:
 ![Main Lang](https://img.shields.io/github/languages/top/rmarting/gh-repo-template)
 ![Languages](https://img.shields.io/github/languages/count/rmarting/gh-repo-template)
 ![Last Commit](https://img.shields.io/github/last-commit/rmarting/gh-repo-template)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/rmarting/gh-repo-template)
 ```
 
 More details [here](https://blog.jromanmartin.io/2023/06/12/Improving-a-gh-repository.html) and in
