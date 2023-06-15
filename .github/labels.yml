@@ -47,3 +47,7 @@
 - name: "🧩 dependencies"
   description: Dependency Updates
   color: "#1FBB8E"
+
+- name: "⚙️ stale"
+  description: Stale
+  color: "#E01A80"

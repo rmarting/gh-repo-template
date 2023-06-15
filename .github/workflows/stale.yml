@@ -1,0 +1,30 @@
+name: ⚙️ Mark stale issues and pull requests ⚙️
+
+on:
+  schedule:
+  #- cron: "0 0 * * *" # Every night
+  - cron: "0 0 1 * *" # First day of each month
+
+permissions:
+  contents: write # only for delete-branch option
+  issues: write
+  pull-requests: write  
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Close Stale Issues
+      uses: actions/stale@v4.1.1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        days-before-stale: 180 # Default: 60
+        days-before-close: 30 # Default: 7
+        # Messages
+        stale-issue-message: '⚙️ Stale issue message'
+        stale-pr-message: '⚙️ Stale pull request message'
+        close-issue-message: '🔐 Issue closed by inactivity'
+        close-pr-message: '🔐 PR closed by inactivity'
+        # Labels
+        stale-issue-label: '⚙️ stale'
+        stale-pr-label: '⚙️ stale'
