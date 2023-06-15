@@ -45,3 +45,7 @@ More details [here](https://blog.jromanmartin.io/2023/06/12/Improving-a-gh-repos
 
 * [Code of Conduct](./CODE_OF_CONDUCT.md)
 * [Contact](./CONTACT.md)
+
+### Contributing
+
+* [Contributing](./CONTRIBUTING.md)
