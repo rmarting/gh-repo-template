@@ -4,6 +4,9 @@
 ![Main Lang](https://img.shields.io/github/languages/top/rmarting/gh-repo-template)
 ![Languages](https://img.shields.io/github/languages/count/rmarting/gh-repo-template)
 ![Last Commit](https://img.shields.io/github/last-commit/rmarting/gh-repo-template)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/rmarting/gh-repo-template)
+[![➰ Sync labels 🏷️](https://github.com/rmarting/gh-repo-template/actions/workflows/sync-labels.yml/badge.svg)](https://github.com/rmarting/gh-repo-template/actions/workflows/sync-labels.yml)
+[![🔖 Release Drafter 🔖](https://github.com/rmarting/gh-repo-template/actions/workflows/release-drafter.yml/badge.svg)](https://github.com/rmarting/gh-repo-template/actions/workflows/release-drafter.yml)
 
 This repository includes a set of items to be used as template for any GitHub repository, getting
 the most powerful tools and benefits from the GitHub's services.
