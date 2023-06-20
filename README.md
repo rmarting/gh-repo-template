@@ -9,13 +9,28 @@
 [![🔖 Release Drafter 🔖](https://github.com/rmarting/gh-repo-template/actions/workflows/release-drafter.yml/badge.svg)](https://github.com/rmarting/gh-repo-template/actions/workflows/release-drafter.yml)
 [![⚙️ Mark stale issues and pull requests ⚙️](https://github.com/rmarting/gh-repo-template/actions/workflows/stale.yml/badge.svg)](https://github.com/rmarting/gh-repo-template/actions/workflows/stale.yml)
 
-This repository includes a set of items to be used as template for any GitHub repository, getting
-the most powerful tools and benefits from the GitHub's services.
+This is a template repository including a set of items to be used as for any GitHub repository,
+getting the most powerful tools and benefits from the GitHub's services.
 
 Some of the items registered here are:
 
 * Badges
 * GitHub Workflows
+* GitHub Templates
+* Open Source Templates
+
+## How to use it
+
+This repo is declared as a GitHub repository template, it means that you can create a new GitHub repository
+from here and getting from the scratch all the content already created here. This is an incredible way to initialize
+any GitHub repo and get, from the first commit, a lot of content and automation process. Once you have the new
+repository created, then you can customize each content with your own requirements, and details. Hope you
+can find this stuff a powerful tool in your daily basics. At least, for me this is the new way of working with
+GitHub.
+
+These references will give you more details about how to create a repository from a template:
+
+* [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
 ## Badges
 
