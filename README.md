@@ -53,7 +53,13 @@ the services provided by [Shields](https://shields.io/).
 
 ### Release Drafter
 
-Workflows for automatic publishing releases and update changelogs.
+Workflows for automatic publishing releases and update changelogs. This workflow is implemented with the following files:
+
+* [release-drafter.yml](.github/workflows/release-drafter.yml)
+* [update-changelog.yml](.github/workflows/update-changelog.yml)
+
+**NOTE**: There is an issue reported here about how to automatically trigger the update changelog workflow from the release workflow. The workaround to
+fix it requires adding a new secret (`PERSONAL_ACCESS_TOKEN`) into your repo.
 
 More details [here](https://blog.jromanmartin.io/2023/06/12/Improving-a-gh-repository.html).
 
@@ -61,6 +67,21 @@ More details [here](https://blog.jromanmartin.io/2023/06/12/Improving-a-gh-repos
 
 [stale workflow](./github/workflows/stale.yml) will warn and close issue and PRs that have had not activity for a
 specific amount of time.
+
+### Continuous Integration in Quarkus/Maven repositories
+
+Continuous Integration is a common practice to accelerate the development life cycle allowing to automate
+a set of building and testing stages as soon a new commit is pushed into the repository. This will provide a fast
+feedback about how is evolving the code by the different team members.
+
+This repo include two different Continuous Integration workflows (or pipelines as I prefer call them):
+
+* [CI for Pull Request](.github/workflows/ci-pr.yml) will build and test the content of any pull request, so we can confirm
+that the source code can be integrated into the main branch successfully.
+* [Full CI](.github/workflows/ci-full.yml) will implement a completed continuous integration workflow (building, testing, and packaging)
+the artifacts and the native image of the application. The native image will be pushed into the [Quay.io](https://quay.io/), as container image repository.
+This workflow requires to have two secrets (`QUAY_REPO_USERNAME`, and `QUAY_REPO_TOKEN`) with the right credentials to push images
+into the container registry.
 
 ## GitHub Templates
 
