@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: read
-      
+
 jobs:
   update_release_draft:
     name: Release drafter
@@ -15,13 +15,18 @@ jobs:
     permissions:
       # write permission is required to create a github release
       contents: write
+      # write permission is required for autolabeler
+      # otherwise, read permission is required at least
+      pull-requests: write
 
     steps:
       - name: Update Release Draft
-        uses: release-drafter/release-drafter@v5
+        uses: release-drafter/release-drafter@v6.1.0
         with:
           publish: true
-          prerelease: false        
+          prerelease: false
+          name: ${{ github.ref_name }}
+          tag: ${{ github.ref_name }}
         env:
           # Instead of GITHUB_TOKEN Ref: https://github.com/stefanzweifel/changelog-updater-action/discussions/30
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
