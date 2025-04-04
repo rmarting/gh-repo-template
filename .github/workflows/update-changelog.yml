@@ -9,23 +9,33 @@ jobs:
     name: Update Changelog
     runs-on: ubuntu-latest
     permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the 
+      # Give the default GITHUB_TOKEN write permission to commit and push the
       # updated CHANGELOG back to the repository.
       # https://github.blog/changelog/2023-02-02-github-actions-updating-the-default-github_token-permissions-to-read-only/
-      contents: write    
+      contents: write
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4.2.2
+
+      - name: Update Contribute List
+        if: false # TODO Enable this step in your final workflow
+        uses: akhilmhdh/contributors-readme-action@v2.3.10
+        with:
+          readme_path: CONTRIBUTORS.md
+          commit_message: 👥 Update contributors family
+          pr_title_on_protected: 👥 Update contributors family
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update Changelog
-        uses: stefanzweifel/changelog-updater-action@v1
+        uses: stefanzweifel/changelog-updater-action@v1.12.0
         with:
           latest-version: ${{ github.event.release.tag_name }}
           release-notes: ${{ github.event.release.body }}
 
       - name: Commit updated Changelog
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5.1.0
         with:
           branch: main
           commit_message: '🔖 Update changelog'
