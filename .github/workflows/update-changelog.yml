@@ -20,7 +20,7 @@ jobs:
 
       - name: Update Contribute List
         if: false # TODO Enable this step in your final workflow
-        uses: akhilmhdh/contributors-readme-action@v2.3.10
+        uses: akhilmhdh/contributors-readme-action@v2.3.11
         with:
           readme_path: CONTRIBUTORS.md
           commit_message: 👥 Update contributors family
